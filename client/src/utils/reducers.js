@@ -9,7 +9,12 @@ import {
       case UPDATE_PRODUCTS:
         return {
           ...state,
-          products: [...action.products],
+          products: [...action.products]
+        };
+      case UPDATE_CATEGORIES:
+        return {
+          ...state,
+          categories: [...action.categories]
         };
   
       default:
